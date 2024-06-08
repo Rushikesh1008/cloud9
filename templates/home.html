@@ -1,0 +1,830 @@
+{% extends "base.html"%}
+{% load static %}
+
+{% block title %}
+  Cloud9
+{% endblock %}
+
+{% block content%}
+<main class="main">
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero section">
+
+    <img src="{% static "img/home-bg-2.png" %}" alt="" data-aos="fade-in">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 d-flex flex-column align-items-center align-items-lg-start my-auto">
+          <h2 data-aos="fade-up" data-aos-delay="100">Welcome to <span>Cloud 9 <i class="fa-solid fa-cloud-sun-rain fa-sm"></i></span></h2>
+          <p data-aos="fade-up" data-aos-delay="200">Your tranquil Oasis in Murbad!</p>
+          <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
+            <a href="#amenities" class="cta-btn">View Amenities</a>
+            <a href="#gallery" class="cta-btn">View Gallery</a>
+          </div>
+        </div>
+        <div id="hero-card" class="col-lg-4 d-flex align-items-center justify-content-center mt-5 mt-lg-0">
+          <!-- <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox play-btn"></a> -->
+              <div class="testimonial-item">
+                <div style="margin-left: 120px; padding: 20px 20px 20px 20px;  background-color: color-mix(in srgb, var(--background-color) 70%, transparent 50%);font-style: italic;border-radius: 6px;z-index: 1;">
+                  <i class=" bi bi-quote quote-icon-left"></i>
+                    <span>Nestled in the heart of Murbad's breathtaking landscape, Cloud9 is just a short drive from Mumbai, Kalyan, and Thane. Our retreat offers the perfect blend of comfort, adventure, and natural beauty making it the perfect escape from the hustle and bustle of the city life!</span>
+                    <br><br>
+                    <span>Imagine waking up to the gentle sounds of nature, surrounded by lush greenery and the promise of a day filled with relaxation and fun. Our eight custom designed bedrooms provide ample space for families, groups of friends, or corporate teams seeking a rejuvenating escape.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </div>
+              </div>
+        </div>
+      </div>
+    </div>
+
+  </section><!-- /Hero Section -->
+
+  <!-- About Section -->
+  <section id="about" class="about section">
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+      <div class="row gy-4">
+        <div class="col-lg-6 order-1 order-lg-2">
+          <img src="{% static "img/about-1.jpg" %}" class="img-fluid about-img" alt="">
+        </div>
+        <div class="col-lg-6 order-2 order-lg-1 content">
+          <h3>Your Ideal Getaway</h3>
+          <p class="fst-italic">
+            Wake up to nature's tranquility, unwind in our inviting atmosphere, reconnect with loved ones and yourself. 
+          </p>
+          <ul>
+            <li><i class="bi bi-check2-all"></i> <span> <strong>Splash and Play: </strong>Take a refreshing dip in our 5-feet swimming pool, or groove to the rhythm in our rain dance setup!</span></li>
+
+            <li><i class="bi bi-check2-all"></i> <span> <strong>Sunset Serenity: </strong> Ascend to our top terrace or view area to witness awe-inspiring sunsets that paint the valleys in hues of gold and orange.</span></li>
+
+            <li><i class="bi bi-check2-all"></i> <span><strong>Embrace Nature: </strong>Stroll through our sprawling gardens, where every corner reveals a new vista of vibrant flora and serene landscapes. During the monsoon season, our surroundings transform into a verdant paradise, perfect for leisurely walks and quiet contemplation. If you’re lucky, you might even get a chance to pick fresh fruit and savour its flavour!</span></li>
+
+            <li><i class="bi bi-check2-all"></i> <span><strong>A Monsoon Paradise:</strong> Murbad truly comes alive during the monsoons, when the landscape transforms into a verdant paradise. Experience the magic of the season as you sip tea on our terrace, surrounded by mist-kissed hills and the soothing sound of raindrops.</span></li>
+          </ul>
+          <br>
+          <p style="font-style: italic;">
+            Come find your Cloud9 in Murbad. We can't wait to welcome you!
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </section><!-- /About Section -->
+
+  <!-- Why Us Section -->
+  <section id="amenities" class="why-us section">
+
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>WHY US</h2>
+      <p>Amenities to Entertain!</p>
+    </div><!-- End Section Title -->
+
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="card-item">
+            <span>01</span>
+            <h4><a href="" class="stretched-link">Poolside Bliss</a></h4>
+            <p class="fst-italic">Refreshing dips and sun-soaked fun</p><br>
+          </div>
+        </div><!-- Card Item -->
+
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="card-item">
+            <span>02</span>
+            <h4><a href="" class="stretched-link">Rain Dance Party</a></h4>
+            <p class="fst-italic">Let loose under the cool spray</p>
+          </div>
+        </div><!-- Card Item -->
+
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="card-item">
+            <span>03</span>
+            <h4><a href="" class="stretched-link">Garden Delights</a></h4>
+            <p class="fst-italic">Lush greenery, fresh papayas (seasonal)</p>
+          </div>
+        </div><!-- Card Item -->
+      </div>        
+      <br>
+      <div class="row gy-4">
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="card-item">
+            <span>04</span>
+            <h4><a href="" class="stretched-link">Skyline Terrace</a></h4>
+            <p class="fst-italic">Breathtaking valley views & stunning sunsets</p>
+          </div>
+        </div><!-- Card Item -->
+
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="card-item">
+            <span>05</span>
+            <h4><a href="" class="stretched-link">Karaoke Nights</a></h4>
+            <p class="fst-italic">Sing your heart out, become a superstar with our karaoke setup.</p>
+          </div>
+        </div><!-- Card Item -->
+
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="card-item">
+            <span>06</span>
+            <h4><a href="" class="stretched-link">Game On</a></h4>
+            <p class="fst-italic">Fun Indoor & outdoor games for all ages</p>
+          </div>
+        </div><!-- Card Item -->
+      </div>
+    </div>
+
+  </section><!-- /Why Us Section -->
+
+  <!-- Menu Section -->
+  <!-- <section id="menu" class="menu section">
+
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Menu</h2>
+      <p>Check Our Tasty Menu</p>
+    </div>
+
+    <div class="container isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+      <div class="row" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-lg-12 d-flex justify-content-center">
+          <ul class="menu-filters isotope-filters">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-starters">Starters</li>
+            <li data-filter=".filter-salads">Salads</li>
+            <li data-filter=".filter-specialty">Specialty</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+        <div class="col-lg-6 menu-item isotope-item filter-starters">
+          <img src="{% static "img/menu/lobster-bisque.jpg" %}" class="menu-img" alt="">
+          <div class="menu-content">
+            <a href="#">Lobster Bisque</a><span>$5.95</span>
+          </div>
+          <div class="menu-ingredients">
+            Lorem, deren, trataro, filede, nerada
+          </div>
+        </div>
+
+        <div class="col-lg-6 menu-item isotope-item filter-specialty">
+          <img src="{% static "img/menu/bread-barrel.jpg" %}" class="menu-img" alt="">
+          <div class="menu-content">
+            <a href="#">Bread Barrel</a><span>$6.95</span>
+          </div>
+          <div class="menu-ingredients">
+            Lorem, deren, trataro, filede, nerada
+          </div>
+        </div>
+
+        <div class="col-lg-6 menu-item isotope-item filter-starters">
+          <img src="{% static "img/menu/cake.jpg" %}" class="menu-img" alt="">
+          <div class="menu-content">
+            <a href="#">Crab Cake</a><span>$7.95</span>
+          </div>
+          <div class="menu-ingredients">
+            A delicate crab cake served on a toasted roll with lettuce and tartar sauce
+          </div>
+        </div>
+
+        <div class="col-lg-6 menu-item isotope-item filter-salads">
+          <img src="{% static "img/menu/caesar.jpg" %}" class="menu-img" alt="">
+          <div class="menu-content">
+            <a href="#">Caesar Selections</a><span>$8.95</span>
+          </div>
+          <div class="menu-ingredients">
+            Lorem, deren, trataro, filede, nerada
+          </div>
+        </div>
+
+        <div class="col-lg-6 menu-item isotope-item filter-specialty">
+          <img src="{% static "img/menu/tuscan-grilled.jpg" %}" class="menu-img" alt="">
+          <div class="menu-content">
+            <a href="#">Tuscan Grilled</a><span>$9.95</span>
+          </div>
+          <div class="menu-ingredients">
+            Grilled chicken with provolone, artichoke hearts, and roasted red pesto
+          </div>
+        </div>
+
+        <div class="col-lg-6 menu-item isotope-item filter-starters">
+          <img src="{% static "img/menu/mozzarella.jpg" %}" class="menu-img" alt="">
+          <div class="menu-content">
+            <a href="#">Mozzarella Stick</a><span>$4.95</span>
+          </div>
+          <div class="menu-ingredients">
+            Lorem, deren, trataro, filede, nerada
+          </div>
+        </div>
+
+        <div class="col-lg-6 menu-item isotope-item filter-salads">
+          <img src="{% static "img/menu/greek-salad.jpg" %}" class="menu-img" alt="">
+          <div class="menu-content">
+            <a href="#">Greek Salad</a><span>$9.95</span>
+          </div>
+          <div class="menu-ingredients">
+            Fresh spinach, crisp romaine, tomatoes, and Greek olives
+          </div>
+        </div>
+
+        <div class="col-lg-6 menu-item isotope-item filter-salads">
+          <img src="{% static "img/menu/spinach-salad.jpg" %}" class="menu-img" alt="">
+          <div class="menu-content">
+            <a href="#">Spinach Salad</a><span>$9.95</span>
+          </div>
+          <div class="menu-ingredients">
+            Fresh spinach with mushrooms, hard boiled egg, and warm bacon vinaigrette
+          </div>
+        </div>
+
+        <div class="col-lg-6 menu-item isotope-item filter-specialty">
+          <img src="{% static "img/menu/lobster-roll.jpg" %}" class="menu-img" alt="">
+          <div class="menu-content">
+            <a href="#">Lobster Roll</a><span>$12.95</span>
+          </div>
+          <div class="menu-ingredients">
+            Plump lobster meat, mayo and crisp lettuce on a toasted bulky roll
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section> -->
+
+  <!-- Specials Section -->
+  <section id="specials" class="specials section">
+
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Specials</h2>
+      <p>Check Our Specials</p>
+    </div>
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+      <div class="row">
+        <div class="col-lg-3">
+          <ul class="nav nav-tabs flex-column">
+            <li class="nav-item">
+              <a class="nav-link active show" data-bs-toggle="tab" href="#specials-tab-1">Modi sit est</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" href="#specials-tab-2">Unde praesentium sed</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" href="#specials-tab-3">Pariatur explicabo vel</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" href="#specials-tab-4">Nostrum qui quasi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" href="#specials-tab-5">Iusto ut expedita aut</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-9 mt-4 mt-lg-0">
+          <div class="tab-content">
+            <div class="tab-pane active show" id="specials-tab-1">
+              <div class="row">
+                <div class="col-lg-8 details order-2 order-lg-1">
+                  <h3>Architecto ut aperiam autem id</h3>
+                  <p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>
+                  <p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat minima eveniet eius et quis magni nihil. Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero</p>
+                </div>
+                <div class="col-lg-4 text-center order-1 order-lg-2">
+                  <img src="{% static "img/specials-1.png" %}" alt="" class="img-fluid">
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="specials-tab-2">
+              <div class="row">
+                <div class="col-lg-8 details order-2 order-lg-1">
+                  <h3>Et blanditiis nemo veritatis excepturi</h3>
+                  <p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>
+                  <p>Ea ipsum voluptatem consequatur quis est. Illum error ullam omnis quia et reiciendis sunt sunt est. Non aliquid repellendus itaque accusamus eius et velit ipsa voluptates. Optio nesciunt eaque beatae accusamus lerode pakto madirna desera vafle de nideran pal</p>
+                </div>
+                <div class="col-lg-4 text-center order-1 order-lg-2">
+                  <img src="{% static "img/specials-2.png" %}" alt="" class="img-fluid">
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="specials-tab-3">
+              <div class="row">
+                <div class="col-lg-8 details order-2 order-lg-1">
+                  <h3>Impedit facilis occaecati odio neque aperiam sit</h3>
+                  <p class="fst-italic">Eos voluptatibus quo. Odio similique illum id quidem non enim fuga. Qui natus non sunt dicta dolor et. In asperiores velit quaerat perferendis aut</p>
+                  <p>Iure officiis odit rerum. Harum sequi eum illum corrupti culpa veritatis quisquam. Neque necessitatibus illo rerum eum ut. Commodi ipsam minima molestiae sed laboriosam a iste odio. Earum odit nesciunt fugiat sit ullam. Soluta et harum voluptatem optio quae</p>
+                </div>
+                <div class="col-lg-4 text-center order-1 order-lg-2">
+                  <img src="{% static "img/specials-3.png" %}" alt="" class="img-fluid">
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="specials-tab-4">
+              <div class="row">
+                <div class="col-lg-8 details order-2 order-lg-1">
+                  <h3>Fuga dolores inventore laboriosam ut est accusamus laboriosam dolore</h3>
+                  <p class="fst-italic">Totam aperiam accusamus. Repellat consequuntur iure voluptas iure porro quis delectus</p>
+                  <p>Eaque consequuntur consequuntur libero expedita in voluptas. Nostrum ipsam necessitatibus aliquam fugiat debitis quis velit. Eum ex maxime error in consequatur corporis atque. Eligendi asperiores sed qui veritatis aperiam quia a laborum inventore</p>
+                </div>
+                <div class="col-lg-4 text-center order-1 order-lg-2">
+                  <img src="{% static "img/specials-4.png" %}" alt="" class="img-fluid">
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="specials-tab-5">
+              <div class="row">
+                <div class="col-lg-8 details order-2 order-lg-1">
+                  <h3>Est eveniet ipsam sindera pad rone matrelat sando reda</h3>
+                  <p class="fst-italic">Omnis blanditiis saepe eos autem qui sunt debitis porro quia.</p>
+                  <p>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae ut non quam ut quod eius qui. Ipsum quia odit vero atque qui quibusdam amet. Occaecati sed est sint aut vitae molestiae voluptate vel</p>
+                </div>
+                <div class="col-lg-4 text-center order-1 order-lg-2">
+                  <img src="{% static "img/specials-5.png" %}" alt="" class="img-fluid">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Events Section -->
+  <!-- <section id="events" class="events section">
+
+    <img class="slider-bg" src="{% static "img/events-bg.jpg" %}" alt="" data-aos="fade-in">
+
+    <div class="container">
+
+      <div class="swiper" data-aos="fade-up" data-aos-delay="100">
+        <script type="application/json" class="swiper-config">
+          {
+            "loop": true,
+            "speed": 600,
+            "autoplay": {
+              "delay": 5000
+            },
+            "slidesPerView": "auto",
+            "pagination": {
+              "el": ".swiper-pagination",
+              "type": "bullets",
+              "clickable": true
+            }
+          }
+        </script>
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <div class="row gy-4 event-item">
+              <div class="col-lg-6">
+                <img src="{% static "img/events-slider/events-slider-1.jpg" %}" class="img-fluid" alt="">
+              </div>
+              <div class="col-lg-6 pt-4 pt-lg-0 content">
+                <h3>Birthday Parties</h3>
+                <div class="price">
+                  <p><span>$189</span></p>
+                </div>
+                <p class="fst-italic">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                  magna aliqua.
+                </p>
+                <ul>
+                  <li><i class="bi bi-check2-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
+                  <li><i class="bi bi-check2-circle"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
+                  <li><i class="bi bi-check2-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
+                </ul>
+                <p>
+                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                  velit esse cillum dolore eu fugiat nulla pariatur
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="row gy-4 event-item">
+              <div class="col-lg-6">
+                <img src="{% static "img/events-slider/events-slider-2.jpg" %}" class="img-fluid" alt="">
+              </div>
+              <div class="col-lg-6 pt-4 pt-lg-0 content">
+                <h3>Private Parties</h3>
+                <div class="price">
+                  <p><span>$290</span></p>
+                </div>
+                <p class="fst-italic">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                  magna aliqua.
+                </p>
+                <ul>
+                  <li><i class="bi bi-check2-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
+                  <li><i class="bi bi-check2-circle"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
+                  <li><i class="bi bi-check2-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
+                </ul>
+                <p>
+                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                  velit esse cillum dolore eu fugiat nulla pariatur
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="row gy-4 event-item">
+              <div class="col-lg-6">
+                <img src="{% static "img/events-slider/events-slider-3.jpg" %}" class="img-fluid" alt="">
+              </div>
+              <div class="col-lg-6 pt-4 pt-lg-0 content">
+                <h3>Custom Parties</h3>
+                <div class="price">
+                  <p><span>$99</span></p>
+                </div>
+                <p class="fst-italic">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                  magna aliqua.
+                </p>
+                <ul>
+                  <li><i class="bi bi-check2-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
+                  <li><i class="bi bi-check2-circle"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
+                  <li><i class="bi bi-check2-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
+                </ul>
+                <p>
+                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                  velit esse cillum dolore eu fugiat nulla pariatur
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+    </div>
+
+  </section> -->
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="gallery section">
+
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Gallery</h2>
+      <p>Some photos from Our Property</p>
+    </div><!-- End Section Title -->
+
+    <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+
+      <div class="row g-0">
+
+        <div class="col-lg-3 col-md-4">
+          <div class="gallery-item">
+            <a href="{% static "img/gallery/gallery-1.jpg" %}" class="glightbox" data-gallery="images-gallery">
+              <img src="{% static "img/gallery/gallery-1.jpg" %}" alt="" class="img-fluid">
+            </a>
+          </div>
+        </div><!-- End Gallery Item -->
+
+        <div class="col-lg-3 col-md-4">
+          <div class="gallery-item">
+            <a href="{% static "img/gallery/gallery-2.jpg" %}" class="glightbox" data-gallery="images-gallery">
+              <img src="{% static "img/gallery/gallery-2.jpg" %}" alt="" class="img-fluid">
+            </a>
+          </div>
+        </div><!-- End Gallery Item -->
+
+        <div class="col-lg-3 col-md-4">
+          <div class="gallery-item">
+            <a href="{% static "img/gallery/gallery-3.jpg" %}" class="glightbox" data-gallery="images-gallery">
+              <img src="{% static "img/gallery/gallery-3.jpg" %}" alt="" class="img-fluid">
+            </a>
+          </div>
+        </div><!-- End Gallery Item -->
+
+        <div class="col-lg-3 col-md-4">
+          <div class="gallery-item">
+            <a href="{% static "img/gallery/gallery-4.jpg" %}" class="glightbox" data-gallery="images-gallery">
+              <img src="{% static "img/gallery/gallery-4.jpg" %}" alt="" class="img-fluid">
+            </a>
+          </div>
+        </div><!-- End Gallery Item -->
+
+        <div class="col-lg-3 col-md-4">
+          <div class="gallery-item">
+            <a href="{% static "img/gallery/gallery-5.jpg" %}" class="glightbox" data-gallery="images-gallery">
+              <img src="{% static "img/gallery/gallery-5.jpg" %}" alt="" class="img-fluid">
+            </a>
+          </div>
+        </div><!-- End Gallery Item -->
+
+        <div class="col-lg-3 col-md-4">
+          <div class="gallery-item">
+            <a href="{% static "img/gallery/gallery-6.jpg" %}" class="glightbox" data-gallery="images-gallery">
+              <img src="{% static "img/gallery/gallery-6.jpg" %}" alt="" class="img-fluid">
+            </a>
+          </div>
+        </div><!-- End Gallery Item -->
+
+        <div class="col-lg-3 col-md-4">
+          <div class="gallery-item">
+            <a href="{% static "img/gallery/gallery-7.jpg" %}" class="glightbox" data-gallery="images-gallery">
+              <img src="{% static "img/gallery/gallery-7.jpg" %}" alt="" class="img-fluid">
+            </a>
+          </div>
+        </div><!-- End Gallery Item -->
+
+        <div class="col-lg-3 col-md-4">
+          <div class="gallery-item">
+            <a href="{% static "img/gallery/gallery-8.jpg" %}" class="glightbox" data-gallery="images-gallery">
+              <img src="{% static "img/gallery/gallery-8.jpg" %}" alt="" class="img-fluid">
+            </a>
+          </div>
+        </div><!-- End Gallery Item -->
+
+      </div>
+
+    </div>
+
+  </section><!-- /Gallery Section -->
+
+  <!-- Testimonials Section -->
+  <section id="reviews" class="testimonials section">
+
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Reviews</h2>
+      <p>What they're saying about us</p>
+    </div><!-- End Section Title -->
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+      <div class="swiper" data-speed="600" data-delay="5000" data-breakpoints="{ &quot;320&quot;: { &quot;slidesPerView&quot;: 1, &quot;spaceBetween&quot;: 40 }, &quot;1200&quot;: { &quot;slidesPerView&quot;: 3, &quot;spaceBetween&quot;: 40 } }">
+        <script type="application/json" class="swiper-config">
+          {
+            "loop": true,
+            "speed": 600,
+            "autoplay": {
+              "delay": 5000
+            },
+            "slidesPerView": "auto",
+            "pagination": {
+              "el": ".swiper-pagination",
+              "type": "bullets",
+              "clickable": true
+            },
+            "breakpoints": {
+              "320": {
+                "slidesPerView": 1,
+                "spaceBetween": 40
+              },
+              "1200": {
+                "slidesPerView": 3,
+                "spaceBetween": 20
+              }
+            }
+          }
+        </script>
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <div class="testimonial-item" "="">
+          <p>
+            <i class=" bi bi-quote quote-icon-left"></i>
+              <span>Cloud9 was the perfect escape from the city! The views from the terrace were breathtaking, especially during sunset. The pool and rain dance were a huge hit with the kids. We loved waking up to the sounds of nature. Can't wait to return!</span>
+              <i class="bi bi-quote quote-icon-right"></i>
+              </p>
+              <img src="{% static "img/testimonials/testimonials-1.jpg" %}" class="testimonial-img" alt="">
+              <h3>Saul Goodman</h3>
+              <h4>Ceo &amp; Founder</h4>
+            </div>
+          </div><!-- End testimonial item -->
+
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <p>
+                <i class="bi bi-quote quote-icon-left"></i>
+                <span>Our team offsite at Cloud9 was a huge success. The property had everything we needed to relax and bond as a group. The lush gardens and monsoon greenery were truly magical. Highly recommended for corporate retreats!</span>
+                <i class="bi bi-quote quote-icon-right"></i>
+              </p>
+              <img src="{% static "img/testimonials/testimonials-2.jpg" %}" class="testimonial-img" alt="">
+              <h3>Sara Wilsson</h3>
+              <h4>Designer</h4>
+            </div>
+          </div><!-- End testimonial item -->
+
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <p>
+                <i class="bi bi-quote quote-icon-left"></i>
+                <span>This was our second stay at Cloud9, and it was just as wonderful as the first. The rooms are spacious and comfortable, and the staff is friendly and helpful. We especially enjoyed the rain dance and swimming in the pool under the stars.</span>
+                <i class="bi bi-quote quote-icon-right"></i>
+              </p>
+              <img src="{% static "img/testimonials/testimonials-3.jpg" %}" class="testimonial-img" alt="">
+              <h3>Jena Karlis</h3>
+              <h4>Store Owner</h4>
+            </div>
+          </div><!-- End testimonial item -->
+
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <p>
+                <i class="bi bi-quote quote-icon-left"></i>
+                <span>Cloud9 made our 25th wedding anniversary truly unforgettable. The staff went above and beyond to create a beautiful setup for our cake cutting, and the catering was absolutely delicious. We couldn't have asked for a more romantic and memorable celebration.</span>
+                <i class="bi bi-quote quote-icon-right"></i>
+              </p>
+              <img src="{% static "img/testimonials/testimonials-4.jpg" %}" class="testimonial-img" alt="">
+              <h3>Matt Brandon</h3>
+              <h4>Freelancer</h4>
+            </div>
+          </div><!-- End testimonial item -->
+
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <p>
+                <i class="bi bi-quote quote-icon-left"></i>
+                <span>Cloud9 is a hidden gem in Murbad. The views from the terrace are simply stunning, and the property is beautifully maintained. It's the perfect place to relax and recharge away from the noisy city life.</span>
+                <i class="bi bi-quote quote-icon-right"></i>
+              </p>
+              <img src="{% static "img/testimonials/testimonials-5.jpg" %}" class="testimonial-img" alt="">
+              <h3>John Larson</h3>
+              <h4>Entrepreneur</h4>
+            </div>
+          </div><!-- End testimonial item -->
+
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+    </div>
+
+  </section><!-- /Testimonials Section -->
+
+  <!-- Chefs Section -->
+  <!-- <section id="chefs" class="chefs section">
+
+   
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Team</h2>
+      <p>Necessitatibus eius consequatur</p>
+    </div>
+
+    <div class="container">
+
+      <div class="row gy-4">
+
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="member">
+            <img src="{% static "img/chefs/chefs-1.jpg" %}" class="img-fluid" alt="">
+            <div class="member-info">
+              <div class="member-info-content">
+                <h4>Walter White</h4>
+                <span>Master Chef</span>
+              </div>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="member">
+            <img src="{% static "img/chefs/chefs-2.jpg" %}" class="img-fluid" alt="">
+            <div class="member-info">
+              <div class="member-info-content">
+                <h4>Sarah Jhonson</h4>
+                <span>Patissier</span>
+              </div>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="member">
+            <img src="{% static "img/chefs/chefs-3.jpg" %}" class="img-fluid" alt="">
+            <div class="member-info">
+              <div class="member-info-content">
+                <h4>William Anderson</h4>
+                <span>Cook</span>
+              </div>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section> -->
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact section">
+
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Contact</h2>
+      <p>Contact Us</p>
+    </div><!-- End Section Title -->
+
+    <div class="mb-5" data-aos="fade-up" data-aos-delay="200">
+      <!-- <iframe style="border:0; width: 100%; height: 400px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2697.5925331882654!2d73.33091971892907!3d19.248350096016214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be78d007f672963%3A0xc1489ace517e0b79!2sCloud9!5e0!3m2!1sen!2sin!4v1717613506621!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+      <iframe style="border:0; width: 100%; height: 400px;"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d320303.9127037119!2d72.97193551824111!3d19.259999935792067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be78d007f672963%3A0xc1489ace517e0b79!2sCloud9!5e0!3m2!1sen!2sin!4v1717613728894!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    </div><!-- End Google Maps -->
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+      <div class="row gy-4">
+
+        <div class="col-lg-4">
+          <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+            <i class="bi bi-geo-alt flex-shrink-0"></i>
+            <div>
+              <h3>Address</h3>
+              <p>Villa No.9, Vishwamrut CHS, Murbad, Ghorale, Maharashtra 421401</p>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+            <i class="bi bi-telephone flex-shrink-0"></i>
+            <div>
+              <h3>Call Us</h3>
+              <p>+91 9958396993</p>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
+            <i class="bi bi-envelope flex-shrink-0"></i>
+            <div>
+              <h3>Email Us</h3>
+              <p>contact@cloud9murbad.com</p>
+            </div>
+          </div><!-- End Info Item -->
+          
+          <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
+            <div class="d-flex mt-2">
+              <a href=""><i class="bi bi-youtube"></i></a>
+              <a href=""><i class="bi bi-facebook"></i></a>
+              <a href=""><i class="bi bi-instagram"></i></a>
+              <a href=""><i class="bi bi-geo-alt-fill"></i></a>
+            </div>
+          </div><!-- End Info Item -->         
+
+        </div>
+
+        <div class="col-lg-8">
+
+          <form method="POST" action="/form_submit" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+            {% csrf_token %}
+            <div class="row gy-4">
+              <div class="col-md-6 form-group">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+              </div>
+              <div class="col-md-6 form-group">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+              </div>
+              <div class="col-md-12 form-group">
+                <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required="" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject">
+              </div>
+              <div class="col-md-12 form-group">
+                <textarea class="form-control" name="message" id="message" rows="6" placeholder="Message" required="" data-rule="required" data-msg="Please write something for us"></textarea>
+              </div>
+            </div>
+
+            <div class="col-md-12 text-center">
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your message has been sent. Thank you!</div>
+              <br>
+              <button type="submit">Send Message</button>
+            </div>
+          </form>
+        </div><!-- End Contact Form -->
+
+      </div>
+
+    </div>
+
+  </section><!-- /Contact Section -->
+
+</main>
+{% endblock %}
