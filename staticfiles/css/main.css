@@ -1113,7 +1113,7 @@ section,
 --------------------------------------------------------------*/
 .why-us .card-item {
   background: color-mix(in srgb, var(--default-color), transparent 92%);
-  padding: 50px 30px;
+  padding: 20px 30px;
   transition: all ease-in-out 0.3s;
   height: 100%;
   position: relative;
@@ -1309,10 +1309,6 @@ section,
     padding: 15px;
   }
 
-  .specials .nav-link.active {
-    color: var(--accent-color);
-    background: var(--accent-color);
-  }
 }
 
 /*--------------------------------------------------------------
